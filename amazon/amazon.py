@@ -16,6 +16,7 @@ from xlsxwriter.workbook import Workbook
 import numpy as np
 import openpyxl
 from pathlib import Path
+from prettytable import PrettyTable
 
 
 
@@ -99,6 +100,10 @@ class Amazon(WebDriver):
         
         with pd.ExcelWriter(excel_full_path) as writer:
             df.to_excel(writer, sheet_name="ItemList")  
+
+        table = PrettyTable(field_names=["Product Name", "Price"])  
+        table.add_rows(item_list)  
+        print(table)
 
         
         

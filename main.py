@@ -10,15 +10,18 @@ amazon= Amazon(custom_driver)
 amazon.first_page()
     
 
-amazon.item_search("nike socks")
-# amazon.item_search(input("What do you want to buy : "))
+# amazon.item_search("nike socks")
+amazon.item_search(input("What do you want to buy : "))
+
 time.sleep(2)
 amazon.take()
 # amazon.minPrice("20")
 # amazon.minPrice(input("Please enter minimum price : "))
-amazon.maxPrice("70")
+# amazon.maxPrice("70")
 time.sleep(2)
-# amazon.minPrice(input("Please enter maximum price : "))
+amazon.maxPrice(input("Please enter maximum price : "))
+
+time.sleep(2)
 amazon.review(star="3")
 # amazon.Review(int(input("Please enter review point ( note: max 4, min 1 ) : ")))
 # amazon.sort_by_low()
