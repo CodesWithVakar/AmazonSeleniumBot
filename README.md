@@ -8,9 +8,11 @@ It includes client code (main.py) that gets information from user.
 
 Please run before running code to get dependency modules: **pip install -r requirements.txt**
 
-Chrome Driver Version: 108.0.5359.99
+**Chrome Driver Version:** 108.0.5359.99
 
-Please download chromedriver from here: https://chromedriver.chromium.org/downloads
+**Please download chromedriver from here:** https://chromedriver.chromium.org/downloads
+
+Please copy driver chromedriver exe under "C:\Selenium\chromedriver.exe" or change the path under constants.py (DRIVER_PATH)
 
 ## Printscreen
 
