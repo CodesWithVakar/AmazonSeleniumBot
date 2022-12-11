@@ -2,7 +2,7 @@
 
 This repo shows how to create bot that pulls item data (name, price, etc.)
 
-It includes client code (main.py) that gets information from user.
+It includes client code (main.py) that gets information from user (stdin).
 
 **Packages:** Selenium, PrettyTable, Numpy, Pandas, Xlsxwriter 
 
@@ -13,6 +13,8 @@ Please run before running code to get dependency modules: **pip install -r requi
 **Please download chromedriver from here:** https://chromedriver.chromium.org/downloads
 
 Please copy driver chromedriver exe under "C:\Selenium\chromedriver.exe" or change the path under constants.py (DRIVER_PATH)
+
+**Output**: Excel File, CSV File, Pretty Table Format Stdout
 
 ## Printscreen
 
